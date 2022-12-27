@@ -1,6 +1,6 @@
-create table product (
-                         id bigint auto_increment,
-                         description varchar(50),
-                         price int,
-                         primary key (id)
+CREATE TABLE public.product (
+                                id serial4 NOT NULL,
+                                description varchar NOT NULL,
+                                price int4 NOT NULL,
+                                CONSTRAINT product_pk PRIMARY KEY (id)
 );

@@ -19,7 +19,7 @@ public class ProductController {
     private ProductService service;
 
     @GetMapping("/all")
-    public Mono<Page<Product>> getAll(@RequestParam("page") int page, @RequestParam("size") int size){
+    public Mono<Page<Product>> getAllProducts(@RequestParam("page") int page, @RequestParam("size") int size){
         return this.service.getProducts(PageRequest.of(page, size));
     }
 }
